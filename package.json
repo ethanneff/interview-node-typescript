@@ -1,0 +1,30 @@
+{
+  "name": "node-typescript",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "nodemon --config .github/nodemon.json",
+    "test": "jest --cache --config .github/jest.config.js",
+    "watch": "jest --cache --config .github/jest.config.js --watch",
+    "lint": "tsc && eslint '**/*.[jt]s?(x)' --cache --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "2.0.12",
+    "ts-node": "10.1.0",
+    "typescript": "4.3.5"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.24",
+    "@typescript-eslint/eslint-plugin": "4.28.3",
+    "@typescript-eslint/parser": "4.28.3",
+    "eslint": "7.31.0",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-jest": "24.3.6",
+    "jest": "27.0.6",
+    "ts-jest": "27.0.3"
+  },
+  "keywords": [],
+  "description": "node playground for typescript data models"
+}
